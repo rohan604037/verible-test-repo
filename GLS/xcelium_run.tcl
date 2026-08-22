@@ -1,3 +1,4 @@
+#
 # Just for functional sim - UART
 xrun -notimingchecks -xminitialize rand:0 -access +rwc +maxdelays -delay_mode unit -timescale 1ns/1ps /home/install/SCL180/SCLPDK_V3.0_KIT/scl180/stdcell/fs120/4M1IL/verilog/vcs_sim_model/tsl18fs120_scl.v /home/install/SCL180/SCLPDK_V3.0_KIT/scl180/memory/spram/4M1L/SPRAM_2048x36/SPRAM_2048x36.v /home/install/SCL180/SCLPDK_V3.0_KIT/scl180/memory/spram/4M1L/SPRAM_1024x36/SPRAM_1024x36.v \ netlist_opt.v \ ../TB/uart_rx_sim.v \ ../TB/tb_uart_with_firmware.sv \ ../TB/W25Q16JV.v \  -incdir ../RTL -incdir ../memh_files -gui
 
